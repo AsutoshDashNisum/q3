@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPA Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #eef5f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background: #005f99;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+
+    ul, ol {
+      padding-left: 2rem;
+      margin: 1rem 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+    }
+
+    button {
+      padding: 0.75rem;
+      border-radius: 6px;
+      background: #007acc;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #005f99;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Single Page Application</h1>
+  <p>Clean, modern and functional layout</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>Welcome to my simple Single Page Application (SPA). This page demonstrates clean design with navigation and interactive elements.</p>
+  <img src="https://picsum.photos/800/300" alt="Sample banner image" />
+  <ul>
+    <li>Explore the About section</li>
+    <li>See a working contact form</li>
+    <li>Learn how to build clean layouts</li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm an aspiring web developer focused on creating visually appealing and user-friendly websites. Here's a short journey timeline:</p>
+  <ol>
+    <li>Started HTML & CSS in 2023</li>
+    <li>Built responsive sites in 2024</li>
+    <li>Learning JavaScript and React in 2025</li>
+  </ol>
+  <p>My technical stack includes:</p>
+  <ul>
+    <li>HTML5 & CSS3</li>
+    <li>JavaScript (ES6+)</li>
+    <li>Version Control (Git & GitHub)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to connect, fill out the form below:</p>
+  <form action="#" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
